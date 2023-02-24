@@ -1,0 +1,15 @@
+Package: dhsclogger
+Title: Logging Functions
+Version: 0.0.0.9000
+Authors@R: 
+    person("Matthew", "Katz", , "matthew.katz@dhsc.gov.uk", role = c("aut", "cre"))
+Description: Convenience wrapper for using 'futile.logger' at DHSC.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE, r6 = TRUE)
+RoxygenNote: 7.2.3
+URL: https://github.com/DataS-DHSC/dhsclogger
+BugReports: https://github.com/DataS-DHSC/dhsclogger/issues
+Imports: 
+    futile.logger (>= 1.4.3),
+    R6 (>= 2.5.1)
