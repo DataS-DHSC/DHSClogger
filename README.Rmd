@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 dhsclogger provides a convenience wrapper to the family of `futile.logger`
 functions to promote use of standardised logging. For more information
-see the [`futile.logger` documentation](https://github.com/zatonovo/futile.logger)
+see the `futile.logger` [documentation](https://github.com/zatonovo/futile.logger)
 
 ## Installation
 

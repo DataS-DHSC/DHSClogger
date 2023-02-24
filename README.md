@@ -5,8 +5,8 @@
 
 dhsclogger provides a convenience wrapper to the family of
 `futile.logger` functions to promote use of standardised logging. For
-more information see the [`futile.logger`
-documentation](https://github.com/zatonovo/futile.logger)
+more information see the `futile.logger`
+[documentation](https://github.com/zatonovo/futile.logger)
 
 ## Installation
 
