@@ -10,10 +10,11 @@ more information see the `futile.logger`
 
 ## Installation
 
-You can install the development version of dhsclogger like so:
+You can install the dhsclogger package like so:
 
 ``` r
-remotes::install_github("DataS-DHSC/dhsclogger")
+if (!requireNamespace("librarian")) install.packages("librarian")
+librarian::shelf(DataS-DHSC/dhsclogger)
 ```
 
 ## Example usage
