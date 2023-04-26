@@ -1,4 +1,4 @@
-Package: dhsclogger
+Package: DHSClogger
 Title: Logging Functions
 Version: 0.0.0.9000
 Authors@R: 
@@ -8,8 +8,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE, r6 = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/DataS-DHSC/dhsclogger
-BugReports: https://github.com/DataS-DHSC/dhsclogger/issues
+URL: https://github.com/DataS-DHSC/DHSClogger
+BugReports: https://github.com/DataS-DHSC/DHSClogger/issues
 Imports: 
     futile.logger (>= 1.4.3),
     R6 (>= 2.5.1)

@@ -1,20 +1,20 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dhsclogger
+# DHSClogger
 
-dhsclogger provides a convenience wrapper to the family of
+DHSClogger provides a convenience wrapper to the family of
 `futile.logger` functions to promote use of standardised logging. For
 more information see the `futile.logger`
 [documentation](https://github.com/zatonovo/futile.logger)
 
 ## Installation
 
-You can install the dhsclogger package like so:
+You can install the DHSClogger package like so:
 
 ``` r
 if (!requireNamespace("librarian")) install.packages("librarian")
-librarian::shelf(DataS-DHSC/dhsclogger)
+librarian::shelf(DataS-DHSC/DHSClogger)
 ```
 
 ## Example usage
@@ -22,7 +22,7 @@ librarian::shelf(DataS-DHSC/dhsclogger)
 To create a log for use in your code:
 
 ``` r
-library(dhsclogger)
+library(DHSClogger)
 
 # get logger collection
 log <- get_dhsc_logger()
