@@ -8,11 +8,7 @@ Wrapper for a collection of \code{futile.logger} logs. Allows each log
 to be given a separate threshold but only needs a single call to
 write to them all. Order of logging levels is (see \code{futile.logger}
 for more details):
-<<<<<<< HEAD
-[\code{TRACE}|\code{DEBUG}|\code{INFO}|\code{WARN}|\code{ERROR}|\code{FATAL}]
-=======
 [ \code{TRACE} | \code{DEBUG} | \code{INFO} | \code{WARN} | \code{ERROR} | \code{FATAL} ]
->>>>>>> 132964b (Initial commit)
 }
 \section{Methods}{
 \subsection{Public methods}{
@@ -42,10 +38,10 @@ Write to log at \code{TRACE} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -63,10 +59,10 @@ Write to log at \code{DEBUG} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -84,10 +80,10 @@ Write to log at \code{INFO} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -105,10 +101,10 @@ Write to log at \code{WARN} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -126,10 +122,10 @@ Write to log at \code{ERROR} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -147,10 +143,10 @@ Write to log at \code{FATAL} level.
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{msg}}{(\code{character()})\cr
-The message to log (can be \code{sprintf} format string)}
+The message to log (can be \code{sprintf} format string).}
 
 \item{\code{...}}{\cr
-Optional arguments to populate the msg format string}
+Optional arguments to populate the msg format string.}
 }
 \if{html}{\out{</div>}}
 }
@@ -159,7 +155,7 @@ Optional arguments to populate the msg format string}
 \if{html}{\out{<a id="method-LogCollection-add"></a>}}
 \if{latex}{\out{\hypertarget{method-LogCollection-add}{}}}
 \subsection{Method \code{add()}}{
-Add a log to the logger collection
+Add a log to the logger collection.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{LogCollection$add(log_name, log_appender = NULL)}\if{html}{\out{</div>}}
 }
@@ -168,10 +164,10 @@ Add a log to the logger collection
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{log_name}}{(\code{character()})\cr
-Name of log to add to logger collection}
+Name of log to add to logger collection.}
 
 \item{\code{log_appender}}{(\code{futile.logger} appender)\cr
-Appender type see \code{futile.logger} for details}
+Appender type see \code{futile.logger} for details.}
 }
 \if{html}{\out{</div>}}
 }
@@ -180,7 +176,7 @@ Appender type see \code{futile.logger} for details}
 \if{html}{\out{<a id="method-LogCollection-set_threshold"></a>}}
 \if{latex}{\out{\hypertarget{method-LogCollection-set_threshold}{}}}
 \subsection{Method \code{set_threshold()}}{
-Set threshold of log in logger collection
+Set threshold of log in logger collection.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{LogCollection$set_threshold(log_name, log_threshold)}\if{html}{\out{</div>}}
 }
@@ -188,18 +184,11 @@ Set threshold of log in logger collection
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-<<<<<<< HEAD
-\item{\code{log_name}}{(\code{character()})\cr
-Name of log to add to logger}
-
-\item{\code{log_threshold}}{(\code{numeric()})\cr
-=======
 \item{\code{log_name}}{(\code{character()}) \cr
-Name of log to add to logger}
+Name of log to add to logger.}
 
 \item{\code{log_threshold}}{("TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL")\cr
->>>>>>> 132964b (Initial commit)
-Level to set threshold at}
+Level to set threshold at.}
 }
 \if{html}{\out{</div>}}
 }
@@ -208,7 +197,7 @@ Level to set threshold at}
 \if{html}{\out{<a id="method-LogCollection-get_log_names"></a>}}
 \if{latex}{\out{\hypertarget{method-LogCollection-get_log_names}{}}}
 \subsection{Method \code{get_log_names()}}{
-Get all logs in logger collection
+Get all logs in logger collection.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{LogCollection$get_log_names()}\if{html}{\out{</div>}}
 }

@@ -4,15 +4,15 @@
 \alias{get_dhsc_logger}
 \title{Get a log collection}
 \usage{
-get_dhsc_logger(log_file = "output/log.txt", prefix = "log")
+get_dhsc_logger(log_file_path = "output/log.txt", prefix = "log")
 }
 \arguments{
-\item{log_file}{Path to log file (will be created if not present)}
+\item{log_file_path}{Path to log file (will be created if not present).}
 
-\item{prefix}{Prefix to use on log names}
+\item{prefix}{Prefix to use on log names.}
 }
 \value{
-A log collection
+A log collection.
 }
 \description{
 Return a log collection with one log to write to

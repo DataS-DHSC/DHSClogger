@@ -26,9 +26,9 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `TRACE` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     trace = function(msg, ...) {
       private$.log_loop(futile.logger::flog.trace, msg, ...)
     },
@@ -36,9 +36,9 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `DEBUG` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     debug = function(msg, ...) {
       private$.log_loop(futile.logger::flog.debug, msg, ...)
     },
@@ -46,9 +46,9 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `INFO` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     info = function(msg, ...) {
       private$.log_loop(futile.logger::flog.info, msg, ...)
     },
@@ -56,9 +56,9 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `WARN` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     warn = function(msg, ...) {
       private$.log_loop(futile.logger::flog.warn, msg, ...)
     },
@@ -66,9 +66,9 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `ERROR` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     error = function(msg, ...) {
       private$.log_loop(futile.logger::flog.error, msg, ...)
     },
@@ -76,19 +76,19 @@ LogCollection <- R6::R6Class(
     #' @description
     #' Write to log at `FATAL` level.
     #' @param msg (`character()`)\cr
-    #' The message to log (can be `sprintf` format string)
+    #' The message to log (can be `sprintf` format string).
     #' @param ... \cr
-    #' Optional arguments to populate the msg format string
+    #' Optional arguments to populate the msg format string.
     fatal = function(msg, ...) {
       private$.log_loop(futile.logger::flog.fatal, msg, ...)
     },
 
     #' @description
-    #' Add a log to the logger collection
+    #' Add a log to the logger collection.
     #' @param log_name (`character()`)\cr
-    #' Name of log to add to logger collection
+    #' Name of log to add to logger collection.
     #' @param log_appender (`futile.logger` appender)\cr
-    #' Appender type see `futile.logger` for details
+    #' Appender type see `futile.logger` for details.
     add = function(log_name, log_appender = NULL) {
       stopifnot("`log_name` must be character string." = is.character(log_name))
 
@@ -104,12 +104,12 @@ LogCollection <- R6::R6Class(
     },
 
     #' @description
-    #' Set threshold of log in logger collection
+    #' Set threshold of log in logger collection.
     #' @param log_name (`character()`) \cr
-    #' Name of log to add to logger
+    #' Name of log to add to logger.
     #' @param log_threshold
     #' ("TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL")\cr
-    #' Level to set threshold at
+    #' Level to set threshold at.
     set_threshold = function(log_name, log_threshold) {
       thresholds <-
         list(
@@ -138,7 +138,7 @@ LogCollection <- R6::R6Class(
     },
 
     #' @description
-    #' Get all logs in logger collection
+    #' Get all logs in logger collection.
     get_log_names = function() {
       return(private$.log_list)
     }
@@ -153,10 +153,10 @@ LogCollection <- R6::R6Class(
 #' console and another to write to file. Logs are named
 #' `prefix`.console and `prefix`.file.
 #'
-#' @param log_file Path to log file (will be created if not present)
-#' @param prefix Prefix to use on log names
+#' @param log_file_path Path to log file (will be created if not present).
+#' @param prefix Prefix to use on log names.
 #'
-#' @return A log collection
+#' @return A log collection.
 #' @export
 get_dhsc_logger <- function(log_file_path = "output/log.txt", prefix = "log") {
   stopifnot(
